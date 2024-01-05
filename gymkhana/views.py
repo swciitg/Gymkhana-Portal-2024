@@ -23,7 +23,7 @@ def home(request):
 def Senate(request):
     res2=requests.get('http://127.0.0.1:8001/ugsenator/?format=json').json()
     response3=requests.get('http://127.0.0.1:8001/pgsenator/?format=json').json()
-    return render(request,'main/Senate.html',{'res2':res2,'response3':response3})
+    return render(request,'main/senate.html',{'res2':res2,'response3':response3})
 
 
 def minutes(request):

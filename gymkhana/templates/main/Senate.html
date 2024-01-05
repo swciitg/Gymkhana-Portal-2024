@@ -19,27 +19,27 @@
     <div class="header">{% include './components/header.html'%}</div>
     <div class="headlinks">{% include './components/headlinks.html'%}</div>
 
-    <p class="studentext" style="position:relative;bottom: 100px;">Welcome to The Students Senate Council, IIT Guwahati
-    </p>
-    <p class="description">Description of students senate council</p>
+    <div class="studentext">Welcome to The Students Senate Council, IIT Guwahati
+    </div>
+    <div class="description">Description of students senate council</div>
     <div class="toplinks">
         <button class="btn btn-light ">
             <div class="studsenate">
-                <p class="descriptionText">Power of students senate </p><img
+                <div class="descriptionText">Power of students senate </div><img
                     src="{% static 'main/images/Arrow - Right Square.svg' %}" class="image" alt="img">
             </div>
         </button>
         <button class="btn btn-light">
             <div class="Msgvp ">
-                <p class="descriptionText">Message from Vice President </p><img
+                <div class="descriptionText">Message from Vice President </div><img
                     src="{% static 'main/images/Arrow - Right Square.svg' %}" class="image" alt="">
             </div>
         </button>
 
     </div>
 
-    <p class="studentext">Students’ executive body</p>
-    <p class="pgtext">UG Senators</p>
+    <div class="studentext">Students’ executive body</div>
+    <div class="pgtext">UG Senators</div>
     <div class="carddeck">
         {% for data in res2 %}
         <div class="card">

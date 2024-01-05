@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="{% static 'main/styles/header.css' %}">
 </head>
-<div class="header" id="header" style="width:100% ;margin:10px 0px 0px 0px; height: 135.5px;">
+<div class="header" id="header" style="width:100% ;margin:10px 0px 0px 0px; ">
     <div class="title" style="display: flex;justify-content:center;">
         <img class="icon" src="{% static 'main/images/1200px-IIT_Guwahati_Logo 1.png' %}" alt="/"
             style="width:32px;height:32px;margin-top:4px;">
@@ -18,19 +18,19 @@
     </div>
     <div class="navbar">
         <div class="gymkhana-portal">
-            <p class="navbarText">GYMKHANA PORTAL</p>
+            <a class="navbarText" href="{% url 'home-page' %} ">GYMKHANA PORTAL</a>
         </div>
         <div class="navbar-center">
-            <p class="navbarLink" >TECHNICAL</p>
-            <p class="navbarLink">SPORTS</p>
-            <p class="navbarLink">CULTURAL</p>
-            <p class="navbarLink">WELFARE</p>
-            <p class="navbarLink">HAB</p>
+            <a class="navbarLink" href="#">TECHNICAL</a>
+            <a class="navbarLink" href="#">SPORTS</a>
+            <a class="navbarLink" href="#">CULTURAL</a>
+            <a class="navbarLink" href="#">WELFARE</a>
+            <a class="navbarLink" href="#">HAB</a>
 
 
         </div>
         
-        <div class="dropdown  dropleft">
+        <div class="dropdown dropleft">
             <button type="button"  data-toggle="dropdown" style="border: 0; padding: 0;background-color: white;">
                 <img src="{% static 'main/images/bars.svg' %}" alt="" style="width:20px ;height:20px;">
             </button>

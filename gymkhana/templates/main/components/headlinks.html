@@ -5,15 +5,9 @@
     </script>
 <link rel="stylesheet" href="{% static 'main/styles/headlinks.css' %}">
 <div class="links" >
-    <p style="font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;margin:50px ; font-size: 16px; width: 28%;"><a id="link1"  href="{% url 'home-page' %} " >Home</a></p>
-    <p style="font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;margin:50px ; font-size: 16px; width: 28%;"><a id="link2"href="{% url 'senate-page' %}">Senate</a></p>
-    <p style="font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;margin:50px ; font-size: 16px; width: 28%;"><a id="link3"href="{% url 'minutes-page' %}">Minutes</a> </p>
+    <div><a id="link1"  href="{% url 'home-page' %} " >Home</a></div>
+    <div><a id="link2"href="{% url 'senate-page' %}">Senate</a></div>
+    <div><a id="link3"href="{% url 'minutes-page' %}">Minutes</a> </div>
 </div>
 
 <script>

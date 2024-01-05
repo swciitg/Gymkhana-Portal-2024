@@ -1,15 +1,35 @@
 
 .links{
-    display:flex ; justify-content: space-evenly;width: 20%; margin-left: 50px;
+    display:flex ; justify-content: space-evenly; 
     
 }
 #link1,#link2,#link3{
     text-decoration:none;color: black;
 }
+.links div a{
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700; font-size: 1rem;
+}
+.links div{
+margin: 30px;
+}
+.headlinks{
+    display: flex;
+    width: 100%;
+
+}
+@media (max-width:500px) {
+.links div a{
+    font-size: 16px;
 
 
+}
+.links div{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
 
-    @media (max-width:1000px){
-        .links{transform:translateX(80px)scale(.9);
-    
-    }}
+  

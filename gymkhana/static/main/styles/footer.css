@@ -5,12 +5,13 @@
     display: flex;
     padding: 1%;
     justify-content: space-around;
-    height: 100%;
+    flex-direction: column;
+    height: auto;
     transform: translateY(50px);
-
 }
 
 .logodiv {
+    margin-right: 2vw;
     margin-top: 2%;
 }
 
@@ -23,7 +24,7 @@
 
 .footer-info {
     display: flex;
-    margin-left: -8%;
+  
 }
 
 .footer-contact {
@@ -72,8 +73,11 @@
 .swc {
     background-color: #1E2532;
     display: flex;
+    justify-content: center;
     transform: translateX(200px);
+    margin-top: 2vw;
     width: 50%;
+ 
 }
 
 .swclogo {
