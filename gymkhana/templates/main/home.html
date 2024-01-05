@@ -18,28 +18,56 @@
     <div style="display: flex; flex-direction: column; flex: 1;">
     <div class="header">{% include './components/header.html'%}</div>
     <img class="homeImage" src="{% static 'main/images/Screenshot from 2022-12-12 23-21-56.png' %}" alt="">
-    {% include './components/headlinks.html'%}
-    <div class="homeabout">
-        <div class="abouttext">
-            <p class="aboutHead">Welcome to The Students Senate Council, IIT
-                Guwahati</p>
-            <p class="aboutInfo">Students Gymkhana Council is the body that promotes the objectives of
-                fostering extra-curricular, co-curricular activities, welfare of students, and their stay in the campus.
-                It comprises of 5 boards:
-            <ul class="listtext">
-                <li>Technical Board</li>
-                <li>Sports Board</li>
-                <li>Welfare Board</li>
-                <li>Cultural Board</li>
-                <li>HAB</li>
-
-            </ul>
-            </p>
-        </div>
-        <img class="aboutImage" src="{% static 'main/images/aboutimage.png' %}" alt="">
+    <div class="headlinks">{% include './components/headlinks.html'%}</div>
+    <div class="studentext">Welcome to The Students Senate Council
     </div>
+    <div class="description">Students Gymkhana Council is the body that promotes the objectives of
+        fostering extra-curricular, co-curricular activities, welfare of students, and their stay in the campus.
+        It comprises of 5 boards:</div>
+    <div class="toplinks">
+       <a href="" >
+        <button class="btn btn-light ">
+            <div class="studsenate">
+                <div class="descriptionText">Technical Board </div><img
+                    src="{% static 'main/images/arrow.svg' %}" class="image" alt="img">
+            </div>
+        </button>
+ </a>
+        <a href="" >  <button class="btn btn-light">
+            <div class="studsenate ">
+                <div class="descriptionText">Sports Board </div><img
+                    src="{% static 'main/images/arrow.svg' %}" class="image" alt="">
+            </div>
+        </button>
+    </a>
+    <a href="" >   
+    <button class="btn btn-light">
+            <div class="studsenate ">
+                <div class="descriptionText">Welfare Board </div><img
+                    src="{% static 'main/images/arrow.svg' %}" class="image" alt="">
+            </div>
+        </button>
+    </a>
+       <a href="" >
+        <button class="btn btn-light">
+            <div class="studsenate ">
+                <div class="descriptionText">Cultural Board</div><img
+                    src="{% static 'main/images/arrow.svg' %}" class="image" alt="">
+            </div>
+        </button>
+ </a>
+        <a href="" >
+        <button class="btn btn-light">
+            <div class="studsenate ">
+                <div class="descriptionText">HAB</div><img
+                    src="{% static 'main/images/arrow.svg' %}" class="image" alt="">
+            </div>
+        </button>
+ </a>
+    </div>
+ 
     <div class="upcomingEvents">
-        <p class="upcomingeventsText">Upcoming Events</p>
+        <div class="upcomingeventsText">Upcoming Events</div>
     </div>
 
 

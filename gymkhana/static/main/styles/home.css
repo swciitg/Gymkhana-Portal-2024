@@ -1,3 +1,69 @@
+
+.studentext {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0% 5%;
+    margin-bottom: 30px;
+   
+}
+
+.btn {
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(153, 153, 153, 1);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(153, 153, 153, 1);
+    box-shadow: 0px 0px 2px 1px rgba(153, 153, 153, 1);
+   padding: 10px 10px !important;
+   width: 300px;
+}
+
+
+.descriptionText {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    
+}
+
+.studsenate {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.description {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0% 5%;
+    margin-top: 20px;
+}
+.toplinks {
+    margin: 30px 0px;
+    width: 100%;
+    padding: 0% 5%;
+    display: flex;
+    flex-wrap: wrap;
+ gap: 30px;
+}
+.upcomingeventsText{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0% 5%;
+    margin-bottom: 30px;
+}
+.upcomingevents{
+    display: flex;
+    flex-direction:column ;
+}
 .gymkhanaCouncilText{
     font-family: 'Raleway';
     font-style: normal;
@@ -53,33 +119,14 @@
 }
 /* card */
 
+
 .homeImage{
     width:99vw; height: 98%;
 }
 .homeabout{
     display:flex ;
 }
-.aboutHead{
-    font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;margin:50px ; font-size: 26px; width: 28%;
-}
-.aboutInfo{
-    width:50% ;margin:50px
-}
-.listtext{
-    margin:35px;
-}
-.aboutImage{
-   
-    height: 50vh;
-    
-}
-.upcomingeventsText{
-    font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;margin:50px ; font-size: 26px; width: 28%;
-}
+
 
 
 /* @media (max-width:1000px){
