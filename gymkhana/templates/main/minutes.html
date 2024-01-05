@@ -28,11 +28,10 @@
     </thead>
     <tbody >
       {% for data3 in res3 %}
-
-      <tr>
+      <tr >
         <th scope="row">{{data3.Serial}}</th>
         <td>{{data3.Subject}}</td>
-        <td>{{data3.Format}}</td>
+        <td><a href="{{data3.Link}}">{{data3.Format}}</a></td>
         <td>{{data3.Date}}</td>
       </tr>
       {% endfor %}

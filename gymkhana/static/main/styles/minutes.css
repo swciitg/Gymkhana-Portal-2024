@@ -21,6 +21,9 @@ border-spacing:0 20px;
 .thead{
     background-color:#71797E ; color: white; 
 }
+.min-row{
+    border:0.2vw solid #71797E;
+}
 
 @media (max-width:700px){
     .minutes{

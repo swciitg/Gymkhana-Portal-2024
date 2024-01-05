@@ -9,7 +9,9 @@
     height: auto;
     transform: translateY(50px);
 }
-
+.foot-top{
+    display: flex;
+}
 .logodiv {
     margin-right: 2vw;
     margin-top: 2%;
@@ -24,6 +26,7 @@
 
 .footer-info {
     display: flex;
+    margin-left: 2vw;
   
 }
 
@@ -35,8 +38,8 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    margin: 50px 50px 0px 0px;
-    font-size: 26px;
+    margin: 5vw 5vw 0px 0px;
+    font-size: 3vw;
 
 }
 
@@ -44,12 +47,11 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    margin: 10px 50px 0px 0px;
-    font-size: 16px;
+    margin: 1vw 2vw 0px 0px;
 }
 
 .useful-links {
-    display: block;
+    display: flex;
     width: 100%;
 }
 
@@ -57,16 +59,16 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    margin: 50px 50px 0px 0px;
-    font-size: 26px;
+    margin: 5vw 5vw 0px 0px;
+    font-size: 3vw;
 }
 
 .somemorelinks {
     display: block;
-    padding-left: 8%;
-    margin-top: 5.7%;
+    margin-top: 3vw;
     position: relative;
     top: 10px;
+    margin-right:3vw;
     
 }
 
@@ -77,7 +79,6 @@
     transform: translateX(200px);
     margin-top: 2vw;
     width: 50%;
- 
 }
 
 .swclogo {
@@ -114,96 +115,101 @@
     .logoimg{
         transform: scale(.9);
     }
-    .swc{
-        transform: scale(.8);
-    }
 }
 @media (max-width:777px){
-    .footer{
-        max-height: 340px;
+    
+    .footer-info{transform: scale(.7);}
+    .swc{
+        transform: translateX(120px);
     }
-    .footer-info{transform: scale(.7);position: relative;right: 10px;bottom: 20px;}
     .swc-text2{white-space: nowrap;}
+    .logodiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .logoimg{transform: scale(.7);}
-    .swc{transform: scale(.75); }
+    .image{transform: scale(.7);}
+    .swc-text2{font-size: 2vw;}
+    .swc-text{font-size: 2vw;}
+    .contact{font-size: 5vw;}
+    .useful-text{font-size: 5vw;}
+    .foot-top{
+        flex-direction: column;
+    }
    
 }
 @media (max-width:600px){
-   .footer{max-height: 300px;}
-    .footer-info{transform: scale(.6);position: relative;right: 20px;bottom: 20px;}
-    .swc{transform: scale(.7)}
-    .logoimg{transform: scale(.6);position: relative;left: 40px;}
+   
+    .footer-info{transform: scale(.6);}
+    .contact-info{
+        font-size: 4vw;
+    }
+    .image{transform: scale(.6);}
+    .swc-text2{font-size: 2vw;}
+    .swc-text{font-size: 2vw;}
+    .contact{font-size: 7vw;}
+    .useful-text{font-size: 7vw;}
+    .logoimg{transform: scale(.6);}
 }
 @media (max-width:470px){
-    .footer{
-        max-height: 240px;
-    }
+   
     .footer-info{
         transform: scale(.5);
         position: relative;
-        right: 0px;
-       bottom: 50px;
+        right:65px;
+
+        
     }
     .logoimg{transform: scale(.5);
-    position: relative;
-left: 60px;
-top: -20px;}
-.somemorelinks{
-    padding-left: 4%;
-    position: relative;
-    top: 25px;
-}
-.useful-links{
-    margin-right: -20px;
-}
-.swc{transform: scale(.6);}
+    }
+    .contact-info{
+        font-size: 6vw;
+    }
+    .image{transform: scale(.6);}
+    .swc-text2{font-size: 3vw;}
+    .swc-text{font-size: 3vw;}
+    .contact{font-size: 9vw;}
+    .useful-text{font-size: 9vw;}
+    .logoimg{transform: scale(.6);}
 }
 @media (max-width:400px){
-    .footer{
-        max-height: 240px;
-    }
+    
     .footer-info{
         transform: scale(.5);
         position: relative;
-        right: 25px;
-       bottom: 50px;
+        right: 65px;
+       bottom:50px;
     }
     .logoimg{transform: scale(.5);
-        position: relative;
-    left: 95px;
-    top: -20px;}
+        }
+        .swc{transform: translateX(70px); }
 }
 @media (max-width:350px){
-    .footer{
-        max-height: 220px;
-    }
+    
     .footer-info{
         transform: scale(.45);
         position: relative;
-        right: 30px;
+        right: 50px;
        bottom: 50px;
     }
     .logoimg{transform: scale(.4);
-        position: relative;
-    left: 110px;
-    top :-40px;}
-    .swc{transform: scale(.55); }
+        }
+    .swc{transform: translateX(70px); }
 
 }
-@media (max-width:320px){
-    .footer{
-        max-height: 200px;
+
+@media(max-width:320px)
+{
+    .contact-info{
+      font-size: 7.5vw;
     }
     .footer-info{
-        transform: scale(.43);
         position: relative;
-        right: 40px;
-       bottom: 40px;
-    }
-    .logoimg{transform: scale(.38);
-        position: relative;
-    left: 120px;
-    top :-30px;}
-    .swc{transform: scale(.5);position: relative;top: 20px; }
+        flex-direction: column;
+        gap:10vw;
 
+        
+    }
+    
 }
