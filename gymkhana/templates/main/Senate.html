@@ -43,13 +43,16 @@
     <div class="carddeck">
         {% for data in res2 %}
         <div class="card">
-            <img class="card-img-top" src="{{data.Image}}"  height="250px" alt="Card image cap">
+            <img class="card-img-top" src="{{data.Image.url}}"  height="250px" alt="">
             <div class="card-body">
-                <h5 class="card-title">{{data.Name}}</h5>
+                <div class="bottomtext">
+                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data.Name}}</div>
+                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data.Position}}</div>
+                </div>
                 <hr style="background-color:white">
                 <div class="bottomtext">
-                    <p class="card-text" style="color: rgb(255, 255, 255);">{{data.Email}}</p>
-                    <p class="card-text" style="color: rgb(255, 255, 255);">{{data.Phone_No}}</p>
+                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data.Email}}</div>
+                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data.Phone_No}}</div>
                 </div>
 
 
@@ -63,13 +66,17 @@
     <div class="carddeck">
         {% for data1 in response3 %}
         <div class="card">
-            <img class="card-img-top" src="{{data1.Image}}"  height="250px" alt="Card image cap">
+            <img class="card-img-top" src="{{data1.Image.url}}"  height="250px" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">{{data1.Name}}</h5>
+                <div class="bottomtext">
+                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data1.Name}}</div>
+                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data1.Position}}</div>
+                </div>
+                <h5 class="card-title"></h5>
                 <hr style="background-color:white">
                 <div class="bottomtext">
-                    <p class="card-text" style="color: rgb(255, 255, 255);">{{data1.Email}}}</p>
-                    <p class="card-text" style="color: rgb(255, 255, 255);">{{data1.Phone_No}}</p>
+                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data1.Email}}}</div>
+                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data1.Phone_No}}</div>
                 </div>
 
 
