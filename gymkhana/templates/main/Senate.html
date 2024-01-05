@@ -16,73 +16,75 @@
 </head>
 
 <body>
-    <div class="header">{% include './components/header.html'%}</div>
-    <div class="headlinks">{% include './components/headlinks.html'%}</div>
+    <div style="display: flex; flex-direction: column; flex: 1;">
+        <div class="header">{% include './components/header.html'%}</div>
+        <div class="headlinks">{% include './components/headlinks.html'%}</div>
 
-    <div class="studentext">Welcome to The Students Senate Council, IIT Guwahati
-    </div>
-    <div class="description">Description of students senate council</div>
-    <div class="toplinks">
-        <button class="btn btn-light ">
-            <div class="studsenate">
-                <div class="descriptionText">Power of students senate </div><img
-                    src="{% static 'main/images/Arrow - Right Square.svg' %}" class="image" alt="img">
-            </div>
-        </button>
-        <button class="btn btn-light">
-            <div class="Msgvp ">
-                <div class="descriptionText">Message from Vice President </div><img
-                    src="{% static 'main/images/Arrow - Right Square.svg' %}" class="image" alt="">
-            </div>
-        </button>
-
-    </div>
-
-    <div class="studentext">Students’ executive body</div>
-    <div class="pgtext">UG Senators</div>
-    <div class="carddeck">
-        {% for data in res2 %}
-        <div class="card">
-            <img class="card-img-top" src="{{data.Image.url}}"  height="250px" alt="">
-            <div class="card-body">
-                <div class="bottomtext">
-                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data.Name}}</div>
-                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data.Position}}</div>
-                </div>
-                <hr style="background-color:white">
-                <div class="bottomtext">
-                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data.Email}}</div>
-                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data.Phone_No}}</div>
-                </div>
-
-
-            </div>
+        <div class="studentext">Welcome to The Students Senate Council, IIT Guwahati
         </div>
-        {% endfor %}
-       
-        
-    </div>
-    <p class="pgtext">PG Senators</p>
-    <div class="carddeck">
-        {% for data1 in response3 %}
-        <div class="card">
-            <img class="card-img-top" src="{{data1.Image.url}}"  height="250px" alt="Card image cap">
-            <div class="card-body">
-                <div class="bottomtext">
-                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data1.Name}}</div>
-                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data1.Position}}</div>
+        <div class="description">Description of students senate council</div>
+        <div class="toplinks">
+            <button class="btn btn-light ">
+                <div class="studsenate">
+                    <div class="descriptionText">Power of students senate </div><img
+                        src="{% static 'main/images/arrow.svg' %}" class="image" alt="img">
                 </div>
-                <h5 class="card-title"></h5>
-                <hr style="background-color:white">
-                <div class="bottomtext">
-                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data1.Email}}}</div>
-                    <div class="card-text" style="color: rgb(255, 255, 255);">{{data1.Phone_No}}</div>
+            </button>
+            <button class="btn btn-light">
+                <div class="Msgvp ">
+                    <div class="descriptionText">Message from Vice President </div><img
+                        src="{% static 'main/images/arrow.svg' %}" class="image" alt="">
                 </div>
+            </button>
 
-
-            </div>
         </div>
-        {% endfor %}
+
+        <div class="studentext">Students’ executive body</div>
+        <div class="pgtext">UG Senators</div>
+        <div class="carddeck">
+            {% for info in ugsenator %}
+            <div class="card">
+                <img class="card-img-top" src="{{info.Image.url}}" height="300px" alt="">
+                <div class="card-body">
+                    <div class="bottomtext">
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Name}}</div>
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Position}}</div>
+                    </div>
+                    <hr style="background-color:white">
+                    <div class="bottomtext">
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Email}}</div>
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Phone_No}}</div>
+                    </div>
+
+
+                </div>
+            </div>
+            {% endfor %}
+
+
+        </div>
+        <p class="pgtext">PG Senators</p>
+        <div class="carddeck">
+            {% for info in pgsenator %}
+            <div class="card">
+                <img class="card-img-top" src="{{info.Image.url}}" height="300px" alt="Card image cap">
+                <div class="card-body">
+                    <div class="bottomtext">
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Name}}</div>
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Position}}</div>
+                    </div>
+                    <h5 class="card-title"></h5>
+                    <hr style="background-color:white">
+                    <div class="bottomtext">
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Email}}}</div>
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Phone_No}}</div>
+                    </div>
+
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 
     {% include './components/footer.html'%}

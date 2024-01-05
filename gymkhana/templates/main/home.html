@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div style="display: flex; flex-direction: column; flex: 1;">
     <div class="header">{% include './components/header.html'%}</div>
     <img class="homeImage" src="{% static 'main/images/Screenshot from 2022-12-12 23-21-56.png' %}" alt="">
     {% include './components/headlinks.html'%}
@@ -50,7 +51,7 @@
 
         <div class="carddeck">
 
-            {% for info in response %}
+            {% for info in faculty %}
 
             <div class="card">
                 <img class="card-img-top" src="{{info.Image}}"  height="250rem" alt="Card image cap">
@@ -72,7 +73,7 @@
 
         <p class="FacultyText">Students’ executive body</p>
         <div class="carddeck">
-            {% for res in response1 %}
+            {% for res in student %}
             <div class="card">
                 <img class="card-img-top" src="{{res.Image}}" height="250rem" alt="Card image cap">
                 <div class="card-body" style="background-color: #482683;">
@@ -93,6 +94,7 @@
             
         </div>
     </div>
+</div>
     {% include './components/footer.html'%}
 
 </body>

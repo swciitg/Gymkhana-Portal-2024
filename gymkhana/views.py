@@ -9,7 +9,7 @@ from rest_framework.decorators import api_view
 def home(request):
     faculty=facultyExecutivebodie.objects.all()
     student=studentExecutivebodie.objects.all()
-    return render(request,'main/home.html',{'response':faculty,'response1':student})
+    return render(request,'main/home.html',{'faculty':faculty,'student':student})
     
 
 
@@ -17,11 +17,11 @@ def home(request):
 def Senate(request):
     ugsenator=ugSenator.objects.all()
     pgsenator=pgSenator.objects.all()
-    return render(request,'main/senate.html',{'res2':ugsenator,'response3':pgsenator})
+    return render(request,'main/senate.html',{'ugsenator':ugsenator,'pgsenator':pgsenator})
 
 
 def minutes(request):
     meetings=meeting.objects.all()
-    return render(request,'main/minutes.html',{'res3':meetings})
+    return render(request,'main/minutes.html',{'meetings':meetings})
 
 

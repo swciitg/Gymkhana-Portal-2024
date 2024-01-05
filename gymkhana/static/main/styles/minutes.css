@@ -22,6 +22,7 @@ margin-bottom: 30px;
 .table-responsive{
     width: 100%;
     padding: 0% 5%;
+    margin-bottom: 5vh;
 }
 .table{
    margin-bottom: 0;
@@ -34,4 +35,7 @@ border-spacing:0px 0px;
 .min-row{
     border:0.2vw solid #71797E;
 }
-
+.meeting-link{
+    color: black;
+    text-decoration: underline;
+}
