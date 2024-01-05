@@ -44,8 +44,8 @@
 
 
     <div>
-        <p class="gymkhanaCouncilText">Gymkhana Executive Council</p>
-        <p class="FacultyText">Faculty executive body</p>
+        <div class="gymkhanaCouncilText">Gymkhana Executive Council</div>
+        <div class="FacultyText">Faculty executive body</div>
 
 
 
@@ -54,13 +54,17 @@
             {% for info in faculty %}
 
             <div class="card">
-                <img class="card-img-top" src="{{info.Image}}"  height="250rem" alt="Card image cap">
+                <img class="card-img-top" src="{{info.Image.url}}" height="300px" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">{{info.Name}}</h5>
-                    <hr class="cardline">
                     <div class="bottomtext">
-                        <p class="card-text" style="color: rgb(255, 255, 255);">{{info.Email}}</p>
-                        <p class="card-text" style="color: rgb(255, 255, 255);">{{info.Phone_No}}</p>
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Name}}</div>
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Position}}</div>
+                    </div>
+                    <h5 class="card-title"></h5>
+                    <hr style="background-color:white">
+                    <div class="bottomtext">
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Email}}}</div>
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Phone_No}}</div>
                     </div>
 
 
@@ -71,23 +75,25 @@
         </div>
 
 
-        <p class="FacultyText">Students’ executive body</p>
+        <div class="FacultyText">Students’ executive body</div>
         <div class="carddeck">
             {% for res in student %}
             <div class="card">
-                <img class="card-img-top" src="{{res.Image}}" height="250rem" alt="Card image cap">
-                <div class="card-body" style="background-color: #482683;">
-                    <h5 class="card-title" style="color: rgb(255, 255, 255);">{{res.Name}}</h5>
+                <img class="card-img-top" src="{{info.Image.url}}" height="300px" alt="">
+                <div class="card-body">
+                    <div class="bottomtext">
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Name}}</div>
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Position}}</div>
+                    </div>
+                    <h5 class="card-title"></h5>
                     <hr style="background-color:white">
                     <div class="bottomtext">
-                        <p class="card-text" style="color: rgb(255, 255, 255);">{{res.Email}}</p>
-                        <p class="card-text" style="color: rgb(255, 255, 255);">{{res.Phone_No}}</p>
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Email}}}</div>
+                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Phone_No}}</div>
                     </div>
 
 
                 </div>
-               
-
             </div>
             {% endfor %}
            

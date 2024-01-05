@@ -1,6 +1,58 @@
-.header{
-    margin: 10px 0px 0px 0px; width: 100%;
+.gymkhanaCouncilText{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0% 5%;
+    margin-bottom: 30px;
 }
+.FacultyText{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+   font-size: 2rem;
+   width: 100%;
+   padding: 0% 5%;
+    color: #482683;
+    margin-bottom: 25px;
+}
+
+/*--------------card---------------*/
+.carddeck {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5vh;
+}
+
+.card {
+    width: 325px;
+    margin: 25px;
+    box-sizing: border-box;
+    border-radius: 20px !important;
+}
+
+.card-body {
+    background-color: #482683;
+}
+
+.card-title {
+    color: rgb(255, 255, 255);
+}
+
+.cardline {
+    background-color: white
+}
+
+.bottomtext {
+    display: flex;
+    justify-content: space-between
+}
+/* card */
+
 .homeImage{
     width:99vw; height: 98%;
 }
@@ -19,7 +71,7 @@
     margin:35px;
 }
 .aboutImage{
-    transform:translateY(-20px);
+   
     height: 50vh;
     
 }
@@ -28,39 +80,9 @@
         font-style: normal;
         font-weight: 700;margin:50px ; font-size: 26px; width: 28%;
 }
-.gymkhanaCouncilText{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;margin: 0px 50px 50px 50px ; font-size: 26px; width: 28%; 
-}
-.FacultyText{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;margin:50px ; font-size: 26px; width: 28%; color: #482683;
-}
-
-/*--------------card---------------*/
-.carddeck{
-    display: flex; justify-content:space-between; flex-wrap: wrap;margin-left:100px; margin-right: 100px;
-}
-.card{
-    width: 18rem; margin: 50px;
-}
-.card-body{
-    background-color: #482683;
-}
-.card-title{
-    color: rgb(255, 255, 255);
-}
-.cardline{
-    background-color:white
-}
-.bottomtext{
-    display: flex; justify-content:space-between
-}
 
 
-@media (max-width:1000px){
+/* @media (max-width:1000px){
     .aboutImage{transform: scale(.7);
     position: relative;
 left: 50px;}
@@ -139,4 +161,4 @@ left: 50px;}
         position: relative;
         left: -40px;
     }
-}
+} */
