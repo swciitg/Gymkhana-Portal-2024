@@ -47,8 +47,11 @@ class studentExecutivebodie(models.Model):
        return f"{self.Name}:{self.Position}"                    
 
 class upcomingEvent(models.Model):
+    Date=models.DateField(null=True)
     Description=models.CharField(max_length=500)
     Image=models.ImageField(upload_to='events/', height_field=None, width_field=None, max_length=100)
+    Link=models.URLField(null=True, blank = True)
+
 
     def __str__(self):
        return self.Description                     

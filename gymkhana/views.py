@@ -9,7 +9,8 @@ from rest_framework.decorators import api_view
 def home(request):
     faculty=facultyExecutivebodie.objects.all()
     student=studentExecutivebodie.objects.all()
-    return render(request,'main/home.html',{'faculty':faculty,'student':student})
+    events=upcomingEvent.objects.all()
+    return render(request,'main/home.html',{'faculty':faculty,'student':student,'events':events})
     
 
 

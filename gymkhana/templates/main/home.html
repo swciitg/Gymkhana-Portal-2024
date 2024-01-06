@@ -16,58 +16,99 @@
 
 <body>
     <div style="display: flex; flex-direction: column; flex: 1;">
-    <div class="header">{% include './components/header.html'%}</div>
-    <img class="homeImage" src="{% static 'main/images/Screenshot from 2022-12-12 23-21-56.png' %}" alt="">
-    <div class="headlinks">{% include './components/headlinks.html'%}</div>
-    <div class="studentext">Welcome to The Students Senate Council
-    </div>
-    <div class="description">Students Gymkhana Council is the body that promotes the objectives of
-        fostering extra-curricular, co-curricular activities, welfare of students, and their stay in the campus.
-        It comprises of 5 boards:</div>
-    <div class="toplinks">
-       <a href="" >
-        <button class="btn btn-light ">
-            <div class="studsenate">
-                <div class="descriptionText">Technical Board </div><img
-                    src="{% static 'main/images/arrow.svg' %}" class="image" alt="img">
+        <div class="header">{% include './components/header.html'%}</div>
+        <div class="img-collab">
+            <div class="image-column">
+                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                    style="height:calc(100%/2)">
+                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                    style="height:calc(100%/2)">
             </div>
-        </button>
- </a>
-        <a href="" >  <button class="btn btn-light">
-            <div class="studsenate ">
-                <div class="descriptionText">Sports Board </div><img
-                    src="{% static 'main/images/arrow.svg' %}" class="image" alt="">
+            <div class="image-column">
+                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                    style="height:calc(100%/3)">
+                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                    style="height:calc(100%/3)">
+                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                    style="height:calc(100%/3)">
             </div>
-        </button>
-    </a>
-    <a href="" >   
-    <button class="btn btn-light">
-            <div class="studsenate ">
-                <div class="descriptionText">Welfare Board </div><img
-                    src="{% static 'main/images/arrow.svg' %}" class="image" alt="">
+            <div class="image-column">
+                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                    style="height:calc(100%/2)">
+                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                    style="height:calc(100%/2)">
             </div>
-        </button>
-    </a>
-       <a href="" >
-        <button class="btn btn-light">
-            <div class="studsenate ">
-                <div class="descriptionText">Cultural Board</div><img
-                    src="{% static 'main/images/arrow.svg' %}" class="image" alt="">
+            <div class="image-column">
+                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                    style="height:calc(100%/3)">
+                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                    style="height:calc(100%/3)">
+                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                    style="height:calc(100%/3)">
             </div>
-        </button>
- </a>
-        <a href="" >
-        <button class="btn btn-light">
-            <div class="studsenate ">
-                <div class="descriptionText">HAB</div><img
-                    src="{% static 'main/images/arrow.svg' %}" class="image" alt="">
+        </div>
+        <div class="headlinks">{% include './components/headlinks.html'%}</div>
+        <div class="studentext">Welcome to The Students Senate Council
+        </div>
+        <div class="description">Students Gymkhana Council is the body that promotes the objectives of
+            fostering extra-curricular, co-curricular activities, welfare of students, and their stay in the campus.
+            It comprises of 5 boards:</div>
+        <div class="toplinks">
+            <button class="btn btn-light ">
+                <div class="studsenate">
+                    <div class="descriptionText">Technical Board </div><img src="{% static 'main/images/arrow.svg' %}"
+                        class="image" alt="img">
+                </div>
+            </button>
+            <button class="btn btn-light">
+                <div class="studsenate ">
+                    <div class="descriptionText">Sports Board </div><img src="{% static 'main/images/arrow.svg' %}"
+                        class="image" alt="">
+                </div>
+            </button>
+            <button class="btn btn-light">
+                <div class="studsenate ">
+                    <div class="descriptionText">Welfare Board </div><img src="{% static 'main/images/arrow.svg' %}"
+                        class="image" alt="">
+                </div>
+            </button>
+            <button class="btn btn-light">
+                <div class="studsenate ">
+                    <div class="descriptionText">Cultural Board</div><img src="{% static 'main/images/arrow.svg' %}"
+                        class="image" alt="">
+                </div>
+            </button>
+            <button class="btn btn-light">
+                <div class="studsenate ">
+                    <div class="descriptionText">HAB</div><img src="{% static 'main/images/arrow.svg' %}" class="image"
+                        alt="">
+                </div>
+            </button>
+        </div>
+
+        <div class="upcomingEvents">
+            <div class="upcomingeventsText">Upcoming Events</div>
+            <div class="slider">
+                <div class="slide-track">
+                {% for events in events %}
+
+                    <div class="slide">
+                        <img src="{{events.Image.url}}" class="img" alt="" />
+                        <div class="carousel-text">
+                            <p>{{events.Date}}</p>
+                            <div class="btn-txt">
+                                <h3 class="event-text">{{events.Description}}</h3>
+                                <btn><a href="{{events.Link}}"><img
+                                            src="{% static  'main/images/events_arrow.svg'  %}"></a></btn>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+          
+
             </div>
-        </button>
- </a>
-    </div>
- 
-    <div class="upcomingEvents">
-        <div class="upcomingeventsText">Upcoming Events</div>
+        </div>
     </div>
 
 
@@ -124,11 +165,11 @@
                 </div>
             </div>
             {% endfor %}
-           
-            
+
+
         </div>
     </div>
-</div>
+    </div>
     {% include './components/footer.html'%}
 
 </body>
