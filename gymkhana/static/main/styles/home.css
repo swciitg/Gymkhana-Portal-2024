@@ -57,7 +57,7 @@
     font-weight: 700;
     width: 100%;
     font-size: 1.5rem;
-    padding: 0% 5%;
+    padding: 0% 5% 0% 0%;
     margin-bottom: 30px;
 }
 .upcomingevents{
@@ -120,9 +120,7 @@
 /* card */
 
 
-.homeImage{
-    width:99vw; height: 98%;
-}
+
 .homeabout{
     display:flex ;
 }
@@ -132,7 +130,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 4));
     }
   }
   
@@ -141,33 +139,17 @@
     padding:5%;
 
     overflow: hidden;
-    position: relative;
+ 
     width: 100%;
   }
   
-  .slider::before,
-  .slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 10vw;
-    position: absolute;
-    width: 20vw;
-    z-index: 2;
-  }
+ .upcomingEvents{
+    padding: 5%;
+ }
   
-  .slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-  
-  .slider::before {
-    left: 0;
-    top: 0;
-  }
   
   .slider .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 15s linear infinite;
     display: flex;
   }
   .carousel-text{
@@ -235,83 +217,3 @@ width: 400px;
     }
 }
 
-/* @media (max-width:1000px){
-    .aboutImage{transform: scale(.7);
-    position: relative;
-left: 50px;}
-}
-
-@media (max-width:700px){
-    
-    
-     .aboutImage{
-       transform: scale(.7);
-       position: relative;
-       left: 180px;
-       
-
-    }
-  
-    .aboutInfo{
-        width: 100%;
-         margin: 10px;
-         position: relative;
-         top: 20px;
-    } 
-    .aboutHead{
-        font-size: 26px;
-        width:100%;
-        margin: 10px;
-      }
-    .listtext{
-        margin: 10px;
-        position: relative;
-        top: 30px;
-    }
-    .homeabout{transform: scale(.8)translateX(-45px);}
-    .upcomingeventsText{
-        transform: scale(.8)translateX(-45px);
-    }
-    .gymkhanaCouncilText{
-        transform: scale(.8)translateX(-70px);
-        width: 300px;
-    }
-    .FacultyText{
-        transform: scale(.75)translateX(-70px)translateY(-40px);
-        width: 250px;
-    }
-    .carddeck{ 
-        margin-right: 10px;
-        margin-left: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    .card{transform: scale(.7);
-    margin-top: -30px;
-    }
-
-                                                                                                                                                                                                   
-}
-
-@media (max-width:500px){
-    .aboutImage{
-        transform: scale(.6);
-        position: relative;
-        left: 0px;
-    }
-
- .aboutHead{
-    width: 35vh;
- }
-}
-@media (max-width:400px){
-    .aboutHead{transform: scale(.9);}
-    .aboutInfo{
-        transform: scale(.9);
-    }
-    .aboutImage{
-        transform: scale(.5);
-        position: relative;
-        left: -40px;
-    }
-} */
