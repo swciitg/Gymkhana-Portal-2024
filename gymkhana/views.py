@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404
 
 from .models import meeting,ugSenator,pgSenator,facultyExecutivebodie,studentExecutivebodie,upcomingEvent
 
-from rest_framework.decorators import api_view
+# from rest_framework.decorators import api_view
 
 def home(request):
     faculty=facultyExecutivebodie.objects.all()

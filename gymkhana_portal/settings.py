@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-b5@a+*^d+n3=@9@i*xguuexm$h29hgpbdk-ufb@3q9rmto0xtg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+    # 'rest_framework',
     'gymkhana',
 ]
 
@@ -101,6 +101,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+ALLOWED_HOSTS = [
+        'swc.iitg.ac.in',
+        'www.swc.iitg.ac.in'
+    ]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
