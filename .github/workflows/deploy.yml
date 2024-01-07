@@ -25,4 +25,4 @@ jobs:
             cd /webapps/Gymkhana-Portal-2024
             git fetch
             git pull
-            docker compose -f ./docker-compose.yml up -d --build
+            sudo docker compose -f ./docker-compose.yml up -d --build
