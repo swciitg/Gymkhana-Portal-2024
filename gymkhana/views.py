@@ -26,3 +26,6 @@ def minutes(request):
     return render(request,'main/minutes.html',{'meetings':meetings})
 
 
+
+def powersenate(request):
+    return render(request,'main/powersenate.html')
