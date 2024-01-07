@@ -15,7 +15,7 @@
     <title>Senate</title>
 </head>
 
-<body>
+<body style="cursor: default;">
     <div style="display: flex; flex-direction: column; flex: 1;">
         <div class="header">{% include './components/header.html'%}</div>
         <div class="headlinks">{% include './components/headlinks.html'%}</div>
@@ -26,13 +26,13 @@
         <div class="toplinks">
             <button class="btn btn-light ">
                 <div class="studsenate">
-                    <a class="descriptionText">Power of students senate </a><img
+                    <a class="descriptionText" href="{% url 'powersenate' %}">Power of students senate </a><img
                         src="{% static 'main/images/arrow.svg' %}" class="image" alt="img">
                 </div>
             </button>
             <button class="btn btn-light">
                 <div class="Msgvp ">
-                    <a class="descriptionText">Message from Vice President </a><img
+                    <a class="descriptionText" href="#">Message from Vice President </a><img
                         src="{% static 'main/images/arrow.svg' %}" class="image" alt="">
                 </div>
             </button>
