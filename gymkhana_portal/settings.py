@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,15 +21,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-b5@a+*^d+n3=@9@i*xguuexm$h29hgpbdk-ufb@3q9rmto0xtg'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-b5@a+*^d+n3=@9@i*xguuexm$h29hgpbdk-ufb@3q9rmto0xtg')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DJANGO_DEBUG', 'False') != 'False'
 
-ALLOWED_HOSTS = [
+if not DEBUG:
+    ALLOWED_HOSTS = [
         'swc.iitg.ac.in',
         'www.swc.iitg.ac.in'
     ]
+else:
+    ALLOWED_HOSTS = []
 CSRF_TRUSTED_ORIGINS = ['https://swc.iitg.ac.in', 'https://www.swc.iitg.ac.in']
 
 
@@ -88,6 +92,19 @@ DATABASES = {
     }
 }
 
+if not DEBUG:
+    print("Connecting to db....")
+    DATABASES = {
+        'default': {
+            "ENGINE":"django.db.backends.postgresql_psycopg2",
+            "NAME":os.environ.get("DB_NAME"),
+            "USER":os.environ.get("DB_USER"),
+            "HOST":os.environ.get("DB_HOST"),
+            "PASSWORD":os.environ.get("DB_PASS"),
+            "PORT":int(os.environ.get("DB_PORT"))
+        }
+
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
