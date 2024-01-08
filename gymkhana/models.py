@@ -12,16 +12,16 @@ class meeting (models.Model):
 class ugSenator(models.Model):
     Name=models.CharField(max_length=50)
     Position=models.CharField(max_length=50)
-    Email=models.CharField(max_length=50)
-    Phone_No=models.CharField(max_length=10)
+    Email=models.CharField(max_length=50,required=False)
+    Phone_No=models.CharField(max_length=10,required=False)
     Image=models.ImageField(upload_to='ugsenetor/')
     def __str__(self):
        return f"{self.Name}:{self.Position}"
 class pgSenator(models.Model):
     Name=models.CharField(max_length=50)
     Position=models.CharField(max_length=50)
-    Email=models.CharField(max_length=50)
-    Phone_No=models.CharField(max_length=10)
+    Email=models.CharField(max_length=50,required=False)
+    Phone_No=models.CharField(max_length=10,required=False)
     Image=models.ImageField(upload_to='pgsenetor/', height_field=None, width_field=None, max_length=100)
 
     def __str__(self):

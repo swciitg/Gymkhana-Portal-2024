@@ -29,7 +29,12 @@
 
 .bottomtext {
     display: flex;
+    flex-direction: column;
     justify-content: space-between
+}
+.bottomtext1{
+    display: flex;
+    justify-content: space-between;
 }
 
 .pgtext {
@@ -68,7 +73,11 @@
     font-weight: 400;
     text-align: left;
     text-decoration: none;
-    
+    color:black;
+}
+.descriptionText:hover{
+    text-decoration: none;
+    color:black;
 }
 
 .studsenate {
@@ -147,7 +156,12 @@ width: 100%;
 }
 }
 
-
+@media(max-width:400px)
+{
+    .bottomtext1{
+        flex-direction: column;
+    }
+}
     @media (max-width:300px){
 .studsenate {
    
