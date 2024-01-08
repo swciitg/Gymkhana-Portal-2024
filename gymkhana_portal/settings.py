@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,7 +35,9 @@ if not DEBUG:
         'www.swc.iitg.ac.in'
     ]
 else:
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = [
+        # 'swc.iitg.ac.in'
+    ]
 CSRF_TRUSTED_ORIGINS = ['https://swc.iitg.ac.in', 'https://www.swc.iitg.ac.in']
 
 
@@ -93,6 +98,7 @@ DATABASES = {
 }
 
 if not DEBUG:
+# if True:
     print("Connecting to db....")
     DATABASES = {
         'default': {
@@ -101,7 +107,7 @@ if not DEBUG:
             "USER":os.environ.get("DB_USER"),
             "HOST":os.environ.get("DB_HOST"),
             "PASSWORD":os.environ.get("DB_PASS"),
-            "PORT":int(os.environ.get("DB_PORT"))
+            "PORT":int(os.environ.get("DB_PORT", '5432'))
         }
 
     }
