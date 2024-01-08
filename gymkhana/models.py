@@ -36,12 +36,13 @@ class facultyExecutivebodie(models.Model):
     Image=models.ImageField(upload_to='facultyexective/', height_field=None, width_field=None, max_length=100)
     def __str__(self):
        return f"{self.Name}:{self.Position}"
+
 class studentExecutivebodie(models.Model):
     Name=models.CharField(max_length=50)
     Position=models.CharField(max_length=50)
     Email=models.CharField(max_length=50)
     Phone_No=models.CharField(max_length=10)
-    Image=models.ImageField(upload_to='facultyexective/', height_field=None, width_field=None, max_length=100)
+    Image=models.ImageField(upload_to='studentexective/', height_field=None, width_field=None, max_length=100)
 
     def __str__(self):
        return f"{self.Name}:{self.Position}"                    
