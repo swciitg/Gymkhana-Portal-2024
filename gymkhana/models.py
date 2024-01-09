@@ -5,7 +5,7 @@ class meeting (models.Model):
     Subject=models.CharField(max_length=122)
     Format=models.CharField(max_length=122)
    
-    meeitngdoc = models.FileField(upload_to='meeting/',null=True,validators=[FileExtensionValidator(['pdf'])])
+    meetingdoc = models.FileField(upload_to='meeting/',null=True,validators=[FileExtensionValidator(['pdf'])])
     Date=models.DateField(null=True)
     def __str__(self):
         return f"{self.Serial}:{self.Subject}"
