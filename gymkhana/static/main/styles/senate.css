@@ -1,7 +1,7 @@
 /*--------------card---------------*/
 .carddeck {
     display: flex;
-    justify-content: space-between;
+   
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 5%;
@@ -115,6 +115,12 @@
     padding: 0% 5%;
     display: flex;
     justify-content: space-evenly;
+}
+@media(max-width:840px)
+{
+    .carddeck{
+        justify-content: center;
+    }
 }
 @media (max-width:700px){
     .carddeck{ 

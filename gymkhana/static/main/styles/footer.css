@@ -23,7 +23,10 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
-
+.somemorelinks a:hover{
+    color: black !important;
+    text-decoration: none !important;
+}
 
 .logoimg {
     width: 142px;

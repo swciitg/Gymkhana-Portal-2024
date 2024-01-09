@@ -87,7 +87,7 @@
 /*--------------card---------------*/
 .carddeck {
     display: flex;
-    justify-content: space-between;
+   
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 5%;
@@ -199,6 +199,12 @@ width: 400px;
 }
 .event-text{
     font-size: 1.3rem;
+}
+@media(max-width:840px)
+{
+    .carddeck{
+        justify-content: center;
+    }
 }
 @media(max-width:500px)
 {

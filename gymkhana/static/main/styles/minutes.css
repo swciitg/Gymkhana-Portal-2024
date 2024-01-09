@@ -23,6 +23,7 @@ margin-bottom: 30px;
     width: 100%;
     padding: 0% 5%;
     margin-bottom: 5vh;
+    overflow-x: hidden !important;
 }
 .table{
    margin-bottom: 0;
@@ -38,4 +39,10 @@ border-spacing:0px 0px;
 .meeting-link{
     color: black;
     text-decoration: underline;
+}
+@media(max-width:500px){
+    .table-responsive{
+
+        overflow-x: scroll !important;
+    }
 }
