@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 
-from .models import meeting,ugSenator,pgSenator,facultyExecutivebodie,studentExecutivebodie,upcomingEvent
+from .models import meeting,ugSenator,pgSenator,facultyExecutivebodie,studentExecutivebodie,upcomingEvent,GirlSenator
 
 # from rest_framework.decorators import api_view
 
@@ -18,7 +18,8 @@ def home(request):
 def Senate(request):
     ugsenator=ugSenator.objects.all()
     pgsenator=pgSenator.objects.all()
-    return render(request,'main/senate.html',{'ugsenator':ugsenator,'pgsenator':pgsenator})
+    girlsenator=GirlSenator.objects.all()
+    return render(request,'main/senate.html',{'ugsenator':ugsenator,'pgsenator':pgsenator,'girlsenator':girlsenator})
 
 
 def minutes(request):
@@ -29,3 +30,5 @@ def minutes(request):
 
 def powersenate(request):
     return render(request,'main/powersenate.html')
+def vpmessage(request):
+    return render(request,'main/vpmessage.html')

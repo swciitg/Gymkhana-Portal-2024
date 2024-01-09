@@ -6,4 +6,6 @@ urlpatterns = [
     path(baseurl+'senate/',views.Senate,name='senate-page'),
     path(baseurl+'minutes/',views.minutes,name='minutes-page'),
     path(baseurl+'powersenate/',views.powersenate,name='powersenate'),
+    path(baseurl+'vpmessage/',views.vpmessage,name='vpmessage'),
+  
 ]
