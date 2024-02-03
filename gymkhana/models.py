@@ -66,5 +66,12 @@ class upcomingEvent(models.Model):
 
 
     def __str__(self):
-       return self.Description                     
+       return self.Description  
+
+class landingPageImages(models.Model):
+  
+    Image=models.ImageField(upload_to='events/', height_field=None, width_field=None, max_length=100)
+   
+    def __str__(self):
+       return self
    
