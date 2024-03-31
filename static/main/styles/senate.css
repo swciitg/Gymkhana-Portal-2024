@@ -1,0 +1,188 @@
+/*--------------card---------------*/
+.carddeck {
+    display: flex;
+   
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5vh;
+}
+
+.card {
+    width: 325px;
+    margin: 25px;
+    box-sizing: border-box;
+    border-radius: 20px !important;
+}
+
+.card-body {
+    background-color: #482683;
+}
+
+.card-title {
+    color: rgb(255, 255, 255);
+}
+
+.cardline {
+    background-color: white
+}
+
+.bottomtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.bottomtext1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pgtext {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+   font-size: 2rem;
+   width: 100%;
+   padding: 0% 5%;
+    color: #482683;
+    margin-bottom: 25px;
+}
+
+.studentext {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0% 5%;
+    margin-bottom: 30px;
+   
+}
+
+.btn {
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(153, 153, 153, 1);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(153, 153, 153, 1);
+    box-shadow: 0px 0px 2px 1px rgba(153, 153, 153, 1);
+   padding: 10px 10px !important;
+}
+
+
+.descriptionText {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    color:black;
+}
+.descriptionText:hover{
+    text-decoration: none;
+    color:black;
+}
+
+.studsenate {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.Msgvp {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    
+}
+
+.description {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0% 5%;
+    margin-top: 20px;
+}
+
+.header {
+    /* margin: 0px 0px 50px 0px; */
+    width: 100%;
+}
+
+
+
+.toplinks {
+    margin: 50px 0px;
+    width: 100%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media(max-width:840px)
+{
+    .carddeck{
+        justify-content: center;
+    }
+}
+@media (max-width:700px){
+    .carddeck{ 
+        margin-right: 10px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+    }
+  
+
+.studentext{
+    font-size: 1.3rem;
+  
+}
+.description{
+    font-size: 0.8rem;
+}
+.descriptionText{
+  font-size: 0.8rem;
+      
+    
+}
+.pgtext{
+font-size: 1.4rem;
+}
+.toplinks{
+    flex-direction: column;
+    gap: 20px
+    ;
+}
+.btn{
+width: 100%;
+}
+.card-title{
+    font-size: 14px;
+}
+.bottomtext{
+    font-size: 12px;
+}
+}
+
+@media(max-width:400px)
+{
+    .bottomtext1{
+        flex-direction: column;
+    }
+}
+    @media (max-width:300px){
+.studsenate {
+   
+    gap: 5%;
+}
+.Msgvp {
+   
+    gap: 5%;
+    
+}
+.card{
+    width: 230px;
+    margin: 25px 0px;
+}
+body{
+    overflow-x: hidden;
+}
+}

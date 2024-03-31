@@ -1,0 +1,149 @@
+.headtext {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.header{
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0.5rem 2.5rem 0.5rem 0rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gymkhana-portal {
+    background-color: #482683;
+    padding: 20px;
+  
+   
+
+}
+/* body{
+    overflow-x: hidden;
+} */
+.navbarText {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1188em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+}
+
+.navbarText:hover {
+    text-decoration: none;
+    color:white;
+}
+
+.navbar-center {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+  
+    
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1538em;
+    text-transform: uppercase;
+
+    color: #482683;
+    
+
+}
+
+.navbarLink {
+    padding-left: 50px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+.navbarLink:hover {
+    text-decoration: none;
+}
+
+.dropdown {
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    .navbar-center {
+       
+        margin-top: 15px;
+    }
+
+
+}
+
+@media (max-width:1000px) {
+
+    .navbar{
+        padding: 0.5rem 0rem;
+    }
+
+    .navbar-center {
+       
+        margin-top: 45px;
+    }
+
+  
+
+    .navbarLink {
+        padding-left: 10%;
+    }
+
+    .icon {
+        margin-left: 5vh;
+    }
+
+    .title {
+        transform: scale(.7);
+    }
+
+    .navbar-center {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+        margin-right: 10px;
+      
+   
+    }
+
+}
+
+@media (max-width:590px) {
+    .navbarText {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:300px) {
+    .navbarText {
+        
+        font-size: 15px;
+       
+    }
+}

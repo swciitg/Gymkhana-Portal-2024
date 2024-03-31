@@ -1,0 +1,38 @@
+
+.links{
+    display:flex ;
+    
+}
+#link1,#link2,#link3{
+    text-decoration:none;color: black;
+}
+.links div a{
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700; font-size: 1rem;
+}
+.links div{
+margin: 30px;
+}
+.headlinks{
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+@media (max-width:500px) {
+.links div a{
+    font-size: 16px;
+
+
+}
+.links div{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
+
+  

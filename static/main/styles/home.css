@@ -1,0 +1,237 @@
+
+.studentext {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0% 5%;
+    margin-bottom: 30px;
+   
+}
+
+.btn {
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(153, 153, 153, 1);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(153, 153, 153, 1);
+    box-shadow: 0px 0px 2px 1px rgba(153, 153, 153, 1);
+   padding: 10px 10px !important;
+   width: 300px;
+}
+
+
+.descriptionText {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    
+}
+
+.studsenate {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.description {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0% 5%;
+    margin-top: 20px;
+}
+.toplinks {
+    margin: 30px 0px;
+    width: 100%;
+    padding: 0% 5%;
+    display: flex;
+    flex-wrap: wrap;
+ gap: 30px;
+}
+.upcomingeventsText{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0% 5% 0% 0%;
+    margin-bottom: 30px;
+}
+.upcomingevents{
+    display: flex;
+    flex-direction:column ;
+}
+.gymkhanaCouncilText{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0% 5%;
+    margin-bottom: 30px;
+}
+.FacultyText{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+   font-size: 2rem;
+   width: 100%;
+   padding: 0% 5%;
+    color: #482683;
+    margin-bottom: 25px;
+}
+
+/*--------------card---------------*/
+.carddeck {
+    display: flex;
+   
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5vh;
+}
+
+.card {
+    width: 325px;
+    margin: 25px;
+    box-sizing: border-box;
+    border-radius: 20px !important;
+}
+
+.card-body {
+    background-color: #482683;
+}
+
+.card-title {
+    color: rgb(255, 255, 255);
+}
+
+.cardline {
+    background-color: white
+}
+
+.bottomtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.bottomtext1{
+    display: flex;
+    justify-content: space-between
+}
+/* card */
+
+
+
+.homeabout{
+    display:flex ;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 4));
+    }
+  }
+  
+  .slider {
+    margin-bottom: 30px;
+    padding:5%;
+
+    overflow: hidden;
+ 
+    width: 100%;
+  }
+  
+ .upcomingEvents{
+    padding: 5%;
+ }
+  
+  
+  .slider .slide-track {
+    animation: scroll 15s linear infinite;
+    display: flex;
+  }
+  .carousel-text{
+    background-color:#482683;
+    padding:30px;
+    color:white;
+    font-family: 'Raleway';
+  }
+  .btn-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .carousel-text p{
+    font-size: 1rem;
+  }
+
+  .slide{
+    margin:1vw;
+    width:400px;
+  
+  }
+  .slide .img{
+width: 400px;
+    aspect-ratio: 2/1;
+
+  }
+ .img-collab{
+    display: flex;
+    width:100%;
+    overflow-x: hidden;
+    height:90vh;
+    gap:2vw;
+ }
+.img-collab img{
+    object-fit: cover;
+    overflow: hidden;
+}
+.image-column{
+    width:calc(100%/4); overflow: hidden;display: flex;flex-direction: column; gap:2vw;
+}
+.event-text{
+    font-size: 1.3rem;
+}
+@media(max-width:840px)
+{
+    .carddeck{
+        justify-content: center;
+    }
+}
+@media(max-width:500px)
+{
+   .event-text{
+    font-size: 1rem;
+
+   }
+   .carousel-text p{
+    font-size: 0.8rem;
+   }
+   .slide{
+    width: 240px;
+   }
+   .slide .img{
+    width: 240px;
+   }
+}
+@media(max-width:400px)
+{
+    .bottomtext1{
+        flex-direction: column;
+    }
+}
+@media(max-width:340px)
+{
+    .btn{
+        width:250px;
+    }
+}
+
