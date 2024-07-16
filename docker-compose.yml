@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.3"
 
 services:
   web:
@@ -10,6 +10,7 @@ services:
     volumes:
         - "./static:/app/static"
         - "./media:/app/media"
+        - "./gymkhana/migrations:/app/gymkhana/migrations"
     ports:
       - "127.0.0.1:9012:8000"
     extra_hosts:

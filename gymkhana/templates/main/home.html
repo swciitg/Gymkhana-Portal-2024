@@ -132,66 +132,67 @@
 
             </div>
         </div>
-    </div>
-
-
-    <div>
-        <div class="gymkhanaCouncilText">Gymkhana Executive Council</div>
-        <div class="FacultyText">Faculty executive body</div>
-
-
-
-        <div class="carddeck">
-
-            {% for info in faculty %}
-
-            <div class="card">
-                <img class="card-img-top" src="{{info.Image.url}}" height="300px" alt="">
-                <div class="card-body">
-                    <div class="bottomtext">
-                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Name}}</div>
-                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Position}}</div>
+        <div>
+            <div class="gymkhanaCouncilText">Gymkhana Executive Council</div>
+            <div class="FacultyText">Faculty executive body</div>
+    
+    
+    
+            <div class="carddeck">
+    
+                {% for info in faculty %}
+    
+                <div class="card">
+                    <img class="card-img-top" src="{{info.Image.url}}" height="300px" alt="">
+                    <div class="card-body">
+                        <div class="bottomtext">
+                            <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Name}}</div>
+                            <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Position}}</div>
+                        </div>
+                        <h5 class="card-title"></h5>
+                        <hr style="background-color:white">
+                        <div class="bottomtext1">
+                            <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Email}}</div>
+                            <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Phone_No}}</div>
+                        </div>
+    
+    
                     </div>
-                    <h5 class="card-title"></h5>
-                    <hr style="background-color:white">
-                    <div class="bottomtext1">
-                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Email}}</div>
-                        <div class="card-text" style="color: rgb(255, 255, 255);">{{info.Phone_No}}</div>
-                    </div>
-
-
                 </div>
+                {% endfor %}
+    
             </div>
-            {% endfor %}
-
-        </div>
-
-
-        <div class="FacultyText">Students’ executive body</div>
-        <div class="carddeck">
-            {% for res in student %}
-            <div class="card">
-                <img class="card-img-top" src="{{res.Image.url}}" height="300px" alt="">
-                <div class="card-body">
-                    <div class="bottomtext">
-                        <div class="card-text" style="color: rgb(255, 255, 255);">{{res.Name}}</div>
-                        <div class="card-text" style="color: rgb(255, 255, 255);">{{res.Position}}</div>
+    
+    
+            <div class="FacultyText">Students’ executive body</div>
+            <div class="carddeck">
+                {% for res in student %}
+                <div class="card">
+                    <img class="card-img-top" src="{{res.Image.url}}" height="300px" alt="">
+                    <div class="card-body">
+                        <div class="bottomtext">
+                            <div class="card-text" style="color: rgb(255, 255, 255);">{{res.Name}}</div>
+                            <div class="card-text" style="color: rgb(255, 255, 255);">{{res.Position}}</div>
+                        </div>
+                        <h5 class="card-title"></h5>
+                        <hr style="background-color:white">
+                        <div class="bottomtext1">
+                            <div class="card-text" style="color: rgb(255, 255, 255);">{{res.Email}}</div>
+                            <div class="card-text" style="color: rgb(255, 255, 255);">{{res.Phone_No}}</div>
+                        </div>
+    
+    
                     </div>
-                    <h5 class="card-title"></h5>
-                    <hr style="background-color:white">
-                    <div class="bottomtext1">
-                        <div class="card-text" style="color: rgb(255, 255, 255);">{{res.Email}}</div>
-                        <div class="card-text" style="color: rgb(255, 255, 255);">{{res.Phone_No}}</div>
-                    </div>
-
-
                 </div>
+                {% endfor %}
+    
+    
             </div>
-            {% endfor %}
-
-
         </div>
     </div>
+
+
+   
     </div>
     {% include './components/footer.html'%}
 
