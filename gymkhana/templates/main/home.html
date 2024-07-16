@@ -19,36 +19,36 @@
         <div class="header">{% include './components/header.html'%}</div>
         <div class="img-collab">
             <div class="image-column">
-                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                <img src="{% static 'main/images/1.jpeg' %}"
                     style="height:calc(100%/2)">
-                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
-                    style="height:calc(100%/2)">
-            </div>
-            <div class="image-column">
-                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
-                    style="height:calc(100%/3)">
-                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
-                    style="height:calc(100%/3)">
-                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
-                    style="height:calc(100%/3)">
-            </div>
-            <div class="image-column">
-                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
-                    style="height:calc(100%/2)">
-                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                <img src="{% static 'main/images/2.jpeg' %}"
                     style="height:calc(100%/2)">
             </div>
             <div class="image-column">
-                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                <img src="{% static 'main/images/3.jpeg' %}"
                     style="height:calc(100%/3)">
-                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                <img src="{% static 'main/images/4.jpeg' %}"
                     style="height:calc(100%/3)">
-                <img src="https://images.pexels.com/photos/994208/pexels-photo-994208.jpeg?cs=srgb&dl=afternoon-friends-friendship-994208.jpg&fm=jpg"
+                <img src="{% static 'main/images/5.jpeg' %}"
+                    style="height:calc(100%/3)">
+            </div>
+            <div class="image-column">
+                <img src="{% static 'main/images/6.jpeg' %}"
+                    style="height:calc(100%/2)">
+                <img src="{% static 'main/images/7.jpeg' %}"
+                    style="height:calc(100%/2)">
+            </div>
+            <div class="image-column">
+                <img src="{% static 'main/images/8.jpeg' %}"
+                    style="height:calc(100%/3)">
+                <img src="{% static 'main/images/9.jpeg' %}"
+                    style="height:calc(100%/3)">
+                <img src="{% static 'main/images/10.jpeg' %}"
                     style="height:calc(100%/3)">
             </div>
         </div>
         <div class="headlinks">{% include './components/headlinks.html'%}</div>
-        <div class="studentext">Welcome to The Students Senate Council
+        <div class="studentext">Welcome to The Students' Gymkhana Council
         </div>
         <div class="description">Students Gymkhana Council is the body that promotes the objectives of
             fostering extra-curricular, co-curricular activities, welfare of students, and their stay in the campus.
@@ -95,6 +95,19 @@
             </button>
             </a>
         </div>
+
+        <div class="description">
+            Committee:</div>
+			<div class="toplinks">
+				<a href="https://swc.iitg.ac.in/swc">
+					<button class="btn btn-light">
+						<div class="studsenate ">
+							<div class="descriptionText">SWC</div><img src="{% static 'main/images/arrow.svg' %}"
+								class="image" alt="">
+						</div>
+					</button>
+					</a>
+			</div>
 
         <div class="upcomingEvents">
             <div class="upcomingeventsText">Upcoming Events</div>
