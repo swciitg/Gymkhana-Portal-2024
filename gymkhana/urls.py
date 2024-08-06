@@ -1,11 +1,11 @@
 from django.urls import path
 from . import views
-baseurl = "gymkhana/"
+baseurl = "/stud/gymkhana/"
 urlpatterns = [
-    path('stud/'+baseurl+'', views.home, name = 'home-page'),
-    path('stud/'+baseurl+'senate/',views.Senate,name='senate-page'),
-    path('stud/'+baseurl+'minutes/',views.minutes,name='minutes-page'),
-    path('stud/'+baseurl+'powersenate/',views.powersenate,name='powersenate'),
-    path('stud/'+baseurl+'vpmessage/',views.vpmessage,name='vpmessage'),
+    path(baseurl+'', views.home, name = 'home-page'),
+    path(baseurl+'senate/',views.Senate,name='senate-page'),
+    path(baseurl+'minutes/',views.minutes,name='minutes-page'),
+    path(baseurl+'powersenate/',views.powersenate,name='powersenate'),
+    path(baseurl+'vpmessage/',views.vpmessage,name='vpmessage'),
   
 ]
