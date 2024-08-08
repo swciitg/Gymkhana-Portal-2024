@@ -154,9 +154,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_URL = '/gymkhana/media/'
+MEDIA_URL = '/stud/gymkhana/media/'
 
-STATIC_URL = '/gymkhana/static/'
+STATIC_URL = '/stud/gymkhana/static/'
 
 STATIC_DIR = BASE_DIR/'static'
 
